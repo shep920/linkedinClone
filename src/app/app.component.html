@@ -6,7 +6,7 @@
 <app-viewCard></app-viewCard>
 <div class="container-fluid justify-content-center d-flex">
   <div *ngFor="let post of posts">
-    <app-post img={{post.img}}></app-post>
+    <app-post img={{post.img}} postText={{post.postText}} altImage={{post.altImage}} name={{post.name}}></app-post>
   </div>
 </div>
 <app-footer></app-footer>
