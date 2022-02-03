@@ -4,4 +4,9 @@
   <app-make-post></app-make-post>
 </div>
 <app-viewCard></app-viewCard>
+<div class="container-fluid justify-content-center d-flex">
+  <div *ngFor="let post of posts">
+    <app-post img={{post.img}}></app-post>
+  </div>
+</div>
 <app-footer></app-footer>

@@ -9,9 +9,10 @@ import { TestbarComponent } from './navigation/testbar/testbar.component';
 import { FooterComponent } from './navigation/footer/footer.component';
 import { MakePostComponent } from './cards/make-post/make-post.component';
 import { ViewCardComponent } from './viewCard/viewCard.component';
+import { PostComponent } from './cards/post/post.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     TopNavBarComponent,
     HeaderComponent,
@@ -19,7 +20,8 @@ import { ViewCardComponent } from './viewCard/viewCard.component';
     TestbarComponent,
     FooterComponent,
     MakePostComponent,
-      ViewCardComponent
+      ViewCardComponent,
+      PostComponent
    ],
   imports: [
     BrowserModule
