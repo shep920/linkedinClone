@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #ffff;">
   <p>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-  <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" style="width:50px;height:60px;">
+  <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" style="width:50px;height:60px;" routerLink="Home" routerLinkActive="active">
   <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
   </form>
@@ -11,11 +11,21 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="btn-group" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-secondary"><i class="bi bi-house-fill"></i>Home</button>
-    <button type="button" class="btn btn-secondary"><i class="bi bi-people-fill"></i>My Network</button>
-    <button type="button" class="btn btn-secondary"><i class="bi bi-briefcase-fill"></i>Jobs</button>
-    <button type="button" class="btn btn-secondary"><i class="bi bi-chat-dots-fill"></i>Messaging</button>
-    <button type="button" class="btn btn-secondary"><i class="bi bi-bell-fill"></i>Notifications</button>
+    <button type="button" class="btn btn-secondary" routerLink="Home" routerLinkActive="active"><i class="bi bi-house-fill"></i>Home</button>
+    <button type="button" class="btn btn-secondary" routerLink="Network" routerLinkActive="active"><i class="bi bi-people-fill"></i>My Network</button>
+    <button type="button" class="btn btn-secondary" routerLink="Jobs" routerLinkActive="active"><i class="bi bi-briefcase-fill"></i>Jobs</button>
+    <button type="button" class="btn btn-secondary" routerLink="Chat" routerLinkActive="active"><i class="bi bi-chat-dots-fill" ></i>Messaging</button>
+    <button type="button" class="btn btn-secondary " routerLink="Notifications" routerLinkActive="active"><i class="bi bi-bell-fill"></i>Notifications</button>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
     <div class="btn-group" role="group">
       <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiME7C5shpaxl0p_VLzCxXjm7emGHsdzBZhUX5nwo_L1Rg7eNczOQBMCVwo_ilOV8s6rY&usqp=CAU" style="width:40px;height:40px;">

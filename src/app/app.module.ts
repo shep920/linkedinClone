@@ -10,9 +10,11 @@ import { FooterComponent } from './navigation/footer/footer.component';
 import { MakePostComponent } from './cards/make-post/make-post.component';
 import { ViewCardComponent } from './viewCard/viewCard.component';
 import { PostComponent } from './cards/post/post.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     TopNavBarComponent,
     HeaderComponent,
@@ -21,10 +23,12 @@ import { PostComponent } from './cards/post/post.component';
     FooterComponent,
     MakePostComponent,
       ViewCardComponent,
-      PostComponent
+      PostComponent,
+      HomeComponent
    ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

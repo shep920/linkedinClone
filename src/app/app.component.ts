@@ -9,11 +9,9 @@ import { PostModel } from './cards/post/post-model';
 })
 export class AppComponent {
   title = 'linkedin-clone';
-  posts: PostModel[] = [];
+
 
   constructor(){
-    for (var post of mock_post_list){
-      this.posts.push(post);
-    }
+
   }
 }
