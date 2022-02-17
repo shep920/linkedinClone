@@ -12,9 +12,10 @@ import { ViewCardComponent } from './viewCard/viewCard.component';
 import { PostComponent } from './cards/post/post.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { NetworkComponent } from './navbarComponents/network/network.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     TopNavBarComponent,
     HeaderComponent,
@@ -24,7 +25,8 @@ import { HomeComponent } from './home/home.component';
     MakePostComponent,
       ViewCardComponent,
       PostComponent,
-      HomeComponent
+      HomeComponent,
+      NetworkComponent,
    ],
   imports: [
     BrowserModule,

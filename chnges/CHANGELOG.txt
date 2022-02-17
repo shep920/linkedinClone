@@ -1,0 +1,8 @@
+Main features
+>Created 5 new components: home, chat, network, jobs and notifications
+>created routing to all components
+>created elements inside compenets to differentiate
+
+Bonus:
+>linkedin picture routes to home
+>created a me component with routing

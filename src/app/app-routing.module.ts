@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { JobsComponent } from './navbarComponents/jobs/jobs.component';
 import { NetworkComponent } from './navbarComponents/network/network.component';
 import { NotificationsComponent } from './navbarComponents/notifications/notifications.component';
+import { MeComponent } from './navbarComponents/me/me.component';
 
 const routes:Routes =[
   {
@@ -25,6 +26,10 @@ const routes:Routes =[
   },
   {
     path:'Notifications',component: NotificationsComponent
+  },
+  {
+    path:'Me',component: MeComponent
+
   },
 ];
 
