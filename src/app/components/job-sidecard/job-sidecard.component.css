@@ -1,0 +1,28 @@
+.linkedin-titleText{
+  color: black;
+  justify-content: center;
+  text-align: center;
+  font-size: large;
+}
+
+.linkedin-subtitleText{
+  color: black;
+  justify-content: center;
+  text-align: center;
+  font-size: medium;
+  color: gray;
+}
+
+.linkedin-numberText{
+  color: blue;
+  justify-content: end;
+  text-align: end;
+  font-size: medium;
+}
+
+.linkedin-clearButton{
+  background-color: white;
+  height: 60px;
+  width:100;
+}
+

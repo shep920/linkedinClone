@@ -13,6 +13,14 @@ import { PostComponent } from './cards/post/post.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { NetworkComponent } from './navbarComponents/network/network.component';
+import { JobCardComponent } from './components/job-card/job-card.component';
+import { JobsComponent } from './navbarComponents/jobs/jobs.component';
+import { JobSidecardComponent } from './components/job-sidecard/job-sidecard.component';
+import { JobRightWidgetComponent } from './components/job-right-widget/job-right-widget.component';
+import { NetworkMessageComponent } from './components/network-message/network-message.component';
+import { NewtowrkLeftWidgetComponent } from './components/newtowrk-left-widget/newtowrk-left-widget.component';
+import { NetworkRightWidgetComponent } from './components/network-right-widget/network-right-widget.component';
+import { NetworkOtherWidgetComponent } from './components/network-other-widget/network-other-widget.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +35,14 @@ import { NetworkComponent } from './navbarComponents/network/network.component';
       PostComponent,
       HomeComponent,
       NetworkComponent,
+      JobCardComponent,
+      JobsComponent,
+      JobSidecardComponent,
+      JobRightWidgetComponent,
+      NetworkMessageComponent,
+      NewtowrkLeftWidgetComponent,
+      NetworkRightWidgetComponent,
+      NetworkOtherWidgetComponent
    ],
   imports: [
     BrowserModule,

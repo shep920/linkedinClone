@@ -1,8 +1,13 @@
 <div class="container-fluid justify-content-center d-flex">
 </div>
 <div class="row">
-  <div *ngFor="let post of posts" class="col 3">
-    <app-post img={{post.img}} postText="pls be my friend" altImage={{post.altImage}} name={{post.name}}></app-post>
+  <div *ngFor="let message of messages" class="col 3">
+    <app-network-message img={{message.img}} postText={{message.postText}} name={{message.name}}></app-network-message>
   </div>
+</div>
+<app-newtowrk-left-widget></app-newtowrk-left-widget>
+<app-network-right-widget></app-network-right-widget>
+<div class="container-fluid justify-content-center d-flex">
+  <app-network-other-widget></app-network-other-widget>
 </div>
 <app-footer></app-footer>

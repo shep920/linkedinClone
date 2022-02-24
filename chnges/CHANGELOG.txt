@@ -1,8 +1,7 @@
 Main features
->Created 5 new components: home, chat, network, jobs and notifications
->created routing to all components
+>Created 6 new components found in components: job-card,rightWidget,leftWidget, and network-message,leftWidget and Rightwidget.
+>job-card and network-message are made via ngfor loops
 >created elements inside compenets to differentiate
 
 Bonus:
->linkedin picture routes to home
->created a me component with routing
+>added 7th component, network other widget.

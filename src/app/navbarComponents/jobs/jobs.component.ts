@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { JobModel } from 'src/app/components/job-card/job-model';
+import { mock_job_list } from 'src/app/components/job-card/mock-job-list';
 
 @Component({
   selector: 'app-jobs',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JobsComponent implements OnInit {
 
-  constructor() { }
+  jobs: JobModel[] = [];
+  constructor() {
+    for (var job of mock_job_list){
+      this.jobs.push(job);
+    }
+   }
 
   ngOnInit() {
   }

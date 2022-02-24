@@ -2,7 +2,7 @@ export const mock_post_list = [
   {
     img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiME7C5shpaxl0p_VLzCxXjm7emGHsdzBZhUX5nwo_L1Rg7eNczOQBMCVwo_ilOV8s6rY&usqp=CAU",
     altImage:"https://i.kym-cdn.com/photos/images/facebook/001/754/950/555",
-    postText: "i hate you, mom",
+    postText: "bruh moment",
     name : "ya boi",
   },
   {

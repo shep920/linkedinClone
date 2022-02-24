@@ -1,47 +1,11 @@
 <div class="container-fluid justify-content-center d-flex">
-<div class="card">
-  <div class="card-body">
-    <img src = 'https://occ-0-1723-1722.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABdPChfCEFiD521b1XCoFfvQlx9F1no-tUHM5SFJ0s9bFxk1GyIkjeZSM60x-CfbcNTPr0TeSnSWt44udge1B-KKTlo8tXsMGcGhW.png?r=74a' style="width:40px;height:40px;">
-    <h5 class="card-title">One piece</h5>
-    <p class="card-text">Come be a pirate</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    <img class="card-img linkedinAltImage" src='https://2.bp.blogspot.com/-889-7HVtQCM/XcDi88AGD1I/AAAAAAAAnac/uIdSLLaA3DUwKjPtHgXz3u4lBGTkcuTowCLcBGAsYHQ/w1200-h630-p-k-no-nu/One-Piece-Filler-List-Guide.jpg' alt="Card image cap">
-    <div class="container-fluid mx-5">
-      <div class="row">
-      </div>
+  <div *ngFor="let job of jobs">
+
+        <app-job-card img={{job.img}} postText={{job.postText}} altImage={{job.altImage}} name={{job.name}}></app-job-card>
     </div>
-    </div>
-  </div>
+</div>
+<app-job-sidecard></app-job-sidecard>
+<div class = "customContainer">
+  <app-job-right-widget></app-job-right-widget>
 </div>
 
-<div class="container-fluid justify-content-center d-flex">
-  <div class="card">
-    <div class="card-body">
-      <img src = 'https://i.ytimg.com/vi/FP06M2HraYA/maxresdefault.jpg' style="width:40px;height:40px;">
-      <h5 class="card-title">The anonymous hacker</h5>
-      <p class="card-text">>implying</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      <img class="card-img linkedinAltImage" src='https://i.kym-cdn.com/photos/images/newsfeed/000/071/713/Fsjal_No_picture_availble20110725-22047-1yznqr3.png' alt="Card image cap">
-      <div class="container-fluid mx-5">
-        <div class="row">
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid justify-content-center d-flex">
-    <div class="card">
-      <div class="card-body">
-        <img src = 'https://static.wikia.nocookie.net/the-soda/images/f/f8/Sprite_Cranberry_Logo.png/revision/latest?cb=20190821212143' style="width:40px;height:40px;">
-        <h5 class="card-title">Sprite</h5>
-        <p class="card-text">You want a sprite cranberry?</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <img class="card-img linkedinAltImage" src='https://i.ytimg.com/vi/EtNKG9LUz-w/maxresdefault.jpg' alt="Card image cap">
-        <div class="container-fluid mx-5">
-          <div class="row">
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
