@@ -1,0 +1,11 @@
+<div *ngIf="myInfo==undefined"></div>
+<p class = "text-warning">failed to fetch</p>
+
+<div *ngIf="myInfo!=undefined"></div>
+  <div class="container-fluid">
+    <div class = "row">
+      <div class = "col-3">
+        User: {{myInfo?.FirstName}} + {{myInfo?.LastName}}
+      </div>
+    </div>
+  </div>

@@ -22,6 +22,9 @@ import { NewtowrkLeftWidgetComponent } from './components/newtowrk-left-widget/n
 import { NetworkRightWidgetComponent } from './components/network-right-widget/network-right-widget.component';
 import { NetworkOtherWidgetComponent } from './components/network-other-widget/network-other-widget.component';
 
+import { HttpClientModule } from '@angular/common/http'
+import { UserInfoComponent } from './user-info/user-info.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,11 +45,13 @@ import { NetworkOtherWidgetComponent } from './components/network-other-widget/n
       NetworkMessageComponent,
       NewtowrkLeftWidgetComponent,
       NetworkRightWidgetComponent,
-      NetworkOtherWidgetComponent
+      NetworkOtherWidgetComponent,
+      UserInfoComponent,
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
