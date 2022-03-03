@@ -1,1 +1,6 @@
-https://linkedinclone-99101-default-rtdb.firebaseio.com/
+Main features
+>created a firebase database
+>linked data to local usage
+>created user info component
+
+Bonus:
