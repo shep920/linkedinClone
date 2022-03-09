@@ -17,7 +17,7 @@ export class UserInfoComponent implements OnInit {
   }
 
   generateInfo(){
-    return this.http.get<Userinfo>("https://linkedinclone-99101-default-rtdb.firebaseio.com/.json");
+    return this.http.get<Userinfo>("https://linkedinclone-99101-default-rtdb.firebaseio.com/myInfo.json");
   }
 
   showUserInfo(){

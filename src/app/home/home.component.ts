@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { mock_post_list } from '../cards/post/mock-post-list';
 import { PostModel } from '../cards/post/post-model';
+import { PostService } from '../cards/post/post.service';
 
 @Component({
   selector: 'app-home',
@@ -9,14 +10,20 @@ import { PostModel } from '../cards/post/post-model';
 })
 export class HomeComponent implements OnInit {
   posts: PostModel[] = [];
-  constructor() {
+  constructor(private service:PostService) {
 
-    for (var post of mock_post_list){
-      this.posts.push(post);
-    }
+
    }
 
-  ngOnInit() {
+  ngOnInit(): void{
+    console.log('bruh');
+    this.service.getPostInfo().subscribe((data:PostModel[])=>{
+      console.log(data)
+      for (var post of data){
+        this.posts.push(post);
+      }
+    })
+
   }
 
 }

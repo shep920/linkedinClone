@@ -1,6 +1,6 @@
 Main features
->created a firebase database
->linked data to local usage
->created user info component
+>added post compoenents to the firebase
+>website now refers to backend instead of local mock lists
 
 Bonus:
+>fixed user info display from last lab
