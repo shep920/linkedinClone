@@ -1,22 +1,22 @@
-import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { PostModel } from "./post-model";
+import { AngularFireDatabase } from '@angular/fire/compat/database';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class PostService{
-  private baseUrl:string='https://linkedinclone-99101-default-rtdb.firebaseio.com/';
-  private UserInfoEndpoint:string='posts.json';
 
-  constructor(private http:HttpClient){
+
+  constructor(private db:AngularFireDatabase){
 
   }
 
   public getPostInfo(){
-    return this.http.get<PostModel []>(this.baseUrl+this.UserInfoEndpoint);
+    return this.db.list<PostModel>("posts").valueChanges();
   }
   public getPost(index:number){
-    return this.http.get<PostModel>(this.baseUrl+index+this.UserInfoEndpoint);
+    return this.db.list("posts",ref=>ref.orderByChild('name').startAt('a')).valueChanges();
   }
 }

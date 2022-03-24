@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { AngularFireModule } from '@angular/fire/compat';
 import { TopNavBarComponent } from './navigation/topnavbar/topnavbar.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidebarComponent } from './navigation/sidebar/sidebar.component';
@@ -24,6 +25,11 @@ import { NetworkOtherWidgetComponent } from './components/network-other-widget/n
 
 import { HttpClientModule } from '@angular/common/http'
 import { UserInfoComponent } from './user-info/user-info.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+
 
 @NgModule({
   declarations: [
@@ -51,7 +57,9 @@ import { UserInfoComponent } from './user-info/user-info.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 Main features
->added post compoenents to the firebase
->website now refers to backend instead of local mock lists
+>Deolpyed website via firebase hosting
+>updated posts to be linked to firebase realtime database.
 
 Bonus:
->fixed user info display from last lab
+>
