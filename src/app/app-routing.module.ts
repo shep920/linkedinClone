@@ -7,10 +7,14 @@ import { JobsComponent } from './navbarComponents/jobs/jobs.component';
 import { NetworkComponent } from './navbarComponents/network/network.component';
 import { NotificationsComponent } from './navbarComponents/notifications/notifications.component';
 import { MeComponent } from './navbarComponents/me/me.component';
+import { AddPostComponent } from './home/add-post/add-post.component';
 
 const routes:Routes =[
   {
     path: '', component: HomeComponent
+  },
+  {
+    path: 'admin', component: AddPostComponent
   },
   {
     path: 'Home', component: HomeComponent

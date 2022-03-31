@@ -1,6 +1,6 @@
 Main features
->Deolpyed website via firebase hosting
->updated posts to be linked to firebase realtime database.
+>Made an admin path with forms
+>can push realtime data into the backend
 
 Bonus:
 >

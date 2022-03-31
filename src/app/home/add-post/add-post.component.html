@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <form #postForm = "ngForm" (ngSubmit)="addPost(postForm.value)">
+        <div class="input-group-text">
+        <span for="">
+          Image Path:
+        </span>
+        <input type="text" class="form-control" ngModel name="img">
+      </div>
+
+      <div class="input-group-text">
+        <span for="">
+          Alt Image Path:
+        </span>
+        <input type="text" class="form-control" ngModel name="altImage">
+      </div>
+
+      <div class="input-group-text">
+        <span for="">
+          Name:
+        </span>
+        <input type="text" class="form-control" ngModel name="name">
+      </div>
+
+      <div class="input-group-text">
+        <span for="">
+          Text:
+        </span>
+        <input type="text" class="form-control" ngModel name="postText">
+      </div>
+
+      <button class="btn" type="submit">boop</button>
+      </form>
+    </div>
+  </div>
+</div>

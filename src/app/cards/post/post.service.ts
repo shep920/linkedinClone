@@ -19,4 +19,8 @@ export class PostService{
   public getPost(index:number){
     return this.db.list("posts",ref=>ref.orderByChild('name').startAt('a')).valueChanges();
   }
+
+  public addPost(post:PostModel){
+    this.db.list<PostModel>("posts").push(post);
+  }
 }
