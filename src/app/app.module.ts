@@ -31,6 +31,7 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AddPostComponent } from './home/add-post/add-post.component';
 import { FormsModule } from '@angular/forms';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { FormsModule } from '@angular/forms';
       NetworkOtherWidgetComponent,
       UserInfoComponent,
       AddPostComponent,
+      AuthenticationComponent,
    ],
   imports: [
     BrowserModule,
