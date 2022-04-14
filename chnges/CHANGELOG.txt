@@ -1,6 +1,7 @@
 Main features
->Made an admin path with forms
->can push realtime data into the backend
+>added a form page for signing up
+>created an auth component
+>created a user auth section on firebase
 
 Bonus:
->
+>uhhh. I used a pull request?
