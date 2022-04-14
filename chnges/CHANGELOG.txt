@@ -1,6 +1,7 @@
 Main features
->Made an admin path with forms
->can push realtime data into the backend
+>added an auth forms tab
+>added an auth service
+>made an auth section on firebase
 
 Bonus:
->
+>uhhh i used a branch?
