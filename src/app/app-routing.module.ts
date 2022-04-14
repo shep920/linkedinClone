@@ -8,6 +8,7 @@ import { NetworkComponent } from './navbarComponents/network/network.component';
 import { NotificationsComponent } from './navbarComponents/notifications/notifications.component';
 import { MeComponent } from './navbarComponents/me/me.component';
 import { AddPostComponent } from './home/add-post/add-post.component';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 const routes:Routes =[
   {
@@ -15,6 +16,9 @@ const routes:Routes =[
   },
   {
     path: 'admin', component: AddPostComponent
+  },
+  {
+    path: 'auth', component: AuthenticationComponent
   },
   {
     path: 'Home', component: HomeComponent
